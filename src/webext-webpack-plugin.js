@@ -1,17 +1,17 @@
-import path from "path";
-import webExt from "web-ext";
+import path from 'path';
+import webExt from 'web-ext';
 
 class WebExtPlugin {
   constructor(params = {}, options = {}) {
     this.params = {
       sourceDir: process.cwd(),
-      artifactsDir: path.join(process.cwd(), "web-ext-artifacts"),
+      artifactsDir: path.join(process.cwd(), 'web-ext-artifacts'),
       noReload: true,
-      ...params
+      ...params,
     };
     this.options = {
       shouldExitProgram: true,
-      ...options
+      ...options,
     };
     this.watch = false;
   }
@@ -29,7 +29,7 @@ class WebExtPlugin {
   }
 
   get name() {
-    return "WebExtPlugin";
+    return 'WebExtPlugin';
   }
 
   run() {

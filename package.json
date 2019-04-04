@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/bgpat/webext-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/bgpat/webext-webpack-plugin#readme"
+  "homepage": "https://github.com/bgpat/webext-webpack-plugin#readme",
+  "dependencies": {
+    "web-ext": "^3.0.0"
+  }
 }

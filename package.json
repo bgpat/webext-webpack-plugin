@@ -20,6 +20,9 @@
     "url": "https://github.com/bgpat/webext-webpack-plugin/issues"
   },
   "homepage": "https://github.com/bgpat/webext-webpack-plugin#readme",
+  "peerDependencies": {
+    "webpack": "^4.3.0"
+  },
   "dependencies": {
     "web-ext": "^3.0.0"
   }

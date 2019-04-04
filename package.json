@@ -1,0 +1,23 @@
+{
+  "name": "webext-webpack-plugin",
+  "version": "0.1.0",
+  "description": "Webpack plugin for web-ext",
+  "main": "dist/webext-webpack-plugin",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgpat/webext-webpack-plugin.git"
+  },
+  "keywords": [
+    "web-ext",
+    "webpack"
+  ],
+  "author": "bgpat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bgpat/webext-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/bgpat/webext-webpack-plugin#readme"
+}

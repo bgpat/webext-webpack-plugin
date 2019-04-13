@@ -52,6 +52,7 @@ workflows:
   version: 2
   test-build-and-deploy:
     jobs:
+    - install
     - test:
         requires:
         - install

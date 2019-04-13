@@ -53,11 +53,11 @@ workflows:
   test-build-and-deploy:
     jobs:
     - test:
-      requires:
-      - install
+        requires:
+        - install
     - build:
-      requires:
-      - install
+        requires:
+        - install
     - deploy:
         requires:
         - test

@@ -4,8 +4,8 @@ defaults: &defaults
   docker:
   - image: circleci/node:11
 jobs:
-  test:
-    <<: *defaults  
+  install:
+    <<: *defaults
     steps:
     - checkout
     - restore_cache:
@@ -13,13 +13,27 @@ jobs:
         - v1-dependencies-{{ checksum "package.json" }}
         - v1-dependencies-
     - run: npm install
-    - run:
-        name: Run tests
-        command: npm test
     - save_cache:
         paths:
         - node_modules
         key: v1-dependencies-{{ checksum "package.json" }}
+    - persist_to_workspace:
+        root: ~/repo
+        paths: .
+  test:
+    <<: *defaults
+    steps:
+    - attach_workspace:
+        at: ~/repo
+    - run:
+        name: Run tests
+        command: npm test
+  build:
+    <<: *defaults
+    steps:
+    - attach_workspace:
+        at: ~/repo
+    - run: npm run build
     - persist_to_workspace:
         root: ~/repo
         paths: .
@@ -36,15 +50,19 @@ jobs:
         command: npm publish
 workflows:
   version: 2
-  test-deploy:
+  test-build-and-deploy:
     jobs:
+    - install
     - test:
-        filters:
-          tags:
-            only: /^v.*/
+        requires:
+        - install
+    - build:
+        requires:
+        - install
     - deploy:
         requires:
         - test
+        - build
         filters:
           tags:
             only: /^v.*/

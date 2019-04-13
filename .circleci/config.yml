@@ -52,13 +52,22 @@ workflows:
   version: 2
   test-build-and-deploy:
     jobs:
-    - install
+    - install:
+        filters:
+          tags:
+            only: /^v.*/
     - test:
         requires:
         - install
+        filters:
+          tags:
+            only: /^v.*/
     - build:
         requires:
         - install
+        filters:
+          tags:
+            only: /^v.*/
     - deploy:
         requires:
         - test

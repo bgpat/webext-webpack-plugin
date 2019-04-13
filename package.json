@@ -1,6 +1,6 @@
 {
   "name": "@bgpat/webext-webpack-plugin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Webpack plugin for web-ext",
   "main": "dist/webext-webpack-plugin",
   "scripts": {

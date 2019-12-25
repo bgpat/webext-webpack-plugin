@@ -26,7 +26,7 @@
     "webpack": "^4.3.0"
   },
   "dependencies": {
-    "web-ext": "^3.0.0"
+    "web-ext": "^4.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",

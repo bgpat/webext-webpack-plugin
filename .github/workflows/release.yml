@@ -11,8 +11,8 @@ jobs:
         uses: release-drafter/release-drafter@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: actions/checkout@v2
-      - uses: actions/cache@v2
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
         with:
           path: |
             ~/.npm
@@ -20,7 +20,7 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('package-lock.json') }}
       - id: node-version
         run: echo "::set-output name=version=$(cat .node-version)"
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ steps.node-version.output.version }}
       - run: npm install

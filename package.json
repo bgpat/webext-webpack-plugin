@@ -31,9 +31,9 @@
   "devDependencies": {
     "@babel/cli": "7.19.3",
     "@babel/core": "7.19.3",
-    "@babel/plugin-proposal-object-rest-spread": "7.18.9",
+    "@babel/plugin-proposal-object-rest-spread": "7.19.4",
     "@babel/polyfill": "7.12.1",
-    "@babel/preset-env": "7.19.3",
+    "@babel/preset-env": "7.19.4",
     "cross-env": "7.0.3",
     "del": "7.0.0",
     "del-cli": "5.0.0",

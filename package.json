@@ -29,9 +29,9 @@
     "web-ext": "^7.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.19.3",
-    "@babel/core": "7.20.5",
-    "@babel/plugin-proposal-object-rest-spread": "7.20.2",
+    "@babel/cli": "7.20.7",
+    "@babel/core": "7.20.7",
+    "@babel/plugin-proposal-object-rest-spread": "7.20.7",
     "@babel/polyfill": "7.12.1",
     "@babel/preset-env": "7.20.2",
     "cross-env": "7.0.3",

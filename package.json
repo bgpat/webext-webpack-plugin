@@ -29,7 +29,7 @@
     "web-ext": "^7.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.24.1",
+    "@babel/cli": "7.24.5",
     "@babel/core": "7.24.5",
     "@babel/plugin-proposal-object-rest-spread": "7.20.7",
     "@babel/polyfill": "7.12.1",

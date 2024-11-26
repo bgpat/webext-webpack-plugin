@@ -39,7 +39,7 @@
     "del-cli": "6.0.0",
     "husky": "9.1.7",
     "lint-staged": "15.2.10",
-    "prettier": "3.3.3",
+    "prettier": "3.4.0",
     "webpack": "5.96.1"
   },
   "husky": {

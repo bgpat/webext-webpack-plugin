@@ -29,11 +29,11 @@
     "web-ext": "^8.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.28.0",
-    "@babel/core": "7.28.0",
+    "@babel/cli": "7.28.3",
+    "@babel/core": "7.28.3",
     "@babel/plugin-proposal-object-rest-spread": "7.20.7",
     "@babel/polyfill": "7.12.1",
-    "@babel/preset-env": "7.28.0",
+    "@babel/preset-env": "7.28.3",
     "cross-env": "10.0.0",
     "del": "8.0.0",
     "del-cli": "6.0.0",

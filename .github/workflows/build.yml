@@ -13,7 +13,7 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('package-lock.json') }}
       - id: node-version
         run: echo "::set-output name=version=$(cat .node-version)"
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: ${{ steps.node-version.outputs.version }}
       - run: npm install

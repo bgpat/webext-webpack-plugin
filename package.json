@@ -40,7 +40,7 @@
     "husky": "9.1.7",
     "lint-staged": "17.0.8",
     "prettier": "3.9.3",
-    "webpack": "5.108.2"
+    "webpack": "5.108.3"
   },
   "husky": {
     "hooks": {
